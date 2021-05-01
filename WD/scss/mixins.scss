@@ -1,0 +1,38 @@
+@mixin btn {
+    background: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-transform: uppercase;
+        &:hover{
+            background-color: #064209;
+        }
+}
+
+@mixin heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+
+    color: #000000;
+}
+
+@mixin paragraph {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #727272;
+}
