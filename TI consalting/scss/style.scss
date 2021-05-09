@@ -1,0 +1,261 @@
+@import "mixins";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+    fontfont-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: $white;
+    .header {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            img {
+                height: 50px;
+            }
+
+            .item {
+                display: flex;
+                p {
+                    padding: 0;
+                    margin: 0 180px 0 0;
+                    display: flex;
+                    align-items: center;
+                    @include span-text;
+                }
+                a {
+                    @include btn-text;
+                    font-size: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include btn-gray;
+                    height: 40px;
+                    width: 180px;
+                }
+            }
+        }
+        .content {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            .offer {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content:space-evenly;
+                h1 {
+                    display: flex;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 38px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: -0.025em;
+                    color: #000000;
+                }
+                span{
+                    @include span-text;
+                }
+                p{
+                    @include p-text;
+                }
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include btn-text;
+                    @include btn-green;
+                    height: 60px;
+                    width: 260px;
+                }
+            }
+            img{
+                
+                height: 500px
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1170px) {
+    .content-wrapper {
+        .header {
+            .nav {
+                .item {
+                    p {
+                        
+                    }
+                }
+            }
+            .content{
+                height: 500px;
+                .offer{
+                    width: 70%;
+                    h1{
+                        font-size: 36px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                    span{
+                        font-size: 18px;
+                    }
+                }
+                img{
+                    
+                    height: 420px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .content-wrapper {
+        .header {
+            .nav {
+                .item {
+                    p {
+                        
+                    }
+                }
+            }
+            .content{
+                height: 500px;
+                .offer{
+                    width: 70%;
+                    h1{
+                        font-size: 28px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    span{
+                        font-size: 16px;
+                    }
+                    a{
+                        width: 180px;
+                    }
+                }
+                img{
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .content-wrapper {
+        .header {
+            .nav {
+                .item {
+                    p {
+                        margin: 0 50px 0 0;
+                    }
+                }
+            }
+            .content{
+                height: 400px;
+                .offer{
+                    width: 70%;
+                    h1{
+                        font-size: 28px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                    span{
+                        font-size: 16px;
+                    }
+                    a{
+                        width: 180px;
+                    }
+                }
+                img{
+                    margin-top: 80px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .content-wrapper {
+        .header {
+            .nav {
+                .item {
+                    p {
+                        display: none;
+                    }
+                }
+            }
+            .content{
+               height: 480px;
+                flex-direction: column-reverse;
+                .offer{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    h1{
+                        font-size: 28px;
+                        margin-bottom: 30px;
+                    }
+                    p{
+                        font-size: 14px;
+                        margin-bottom: 30px;
+                    }
+                    span{
+                        font-size: 16px;
+                        margin-bottom: 30px;
+                    }
+                    a{
+                        width: 100%;
+                    }
+                }
+                .img{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        display: flex;
+                        justify-content: center;
+                        height: 250px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .content-wrapper {
+        .header {
+            .nav {
+                .item {
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
