@@ -82,6 +82,15 @@
   background-color: royalblue;
   color: white;
 }
+.test-slider {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+.test-slider .slider {
+  width: 1140px;
+}
+
 .portfolio {
   margin-top: 45px;
   display: flex;
@@ -243,6 +252,24 @@
   border: 1px solid royalblue;
   background-color: royalblue;
   color: white;
+}
+
+.faq {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+.faq span {
+  margin-bottom: 45px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.faq .content {
+  width: 980px;
 }
 
 .footer {
