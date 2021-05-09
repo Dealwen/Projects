@@ -97,6 +97,14 @@
         }
     }
 }
+.test-slider {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    .slider {
+        width: 1140px;
+    }
+}
 .portfolio {
     margin-top: 45px;
     display: flex;
@@ -286,6 +294,24 @@
                 }
             }
         }
+    }
+}
+.faq {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    
+    span {
+        margin-bottom: 45px;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+    .content {
+        width: 980px;
     }
 }
 .footer {
