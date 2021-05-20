@@ -395,6 +395,7 @@
                 margin: 0;
             }
             .icons {
+                display: flex;
                 a {
                     margin-left: 30px;
                     &:first-child {
@@ -611,9 +612,10 @@
                     top: 0 !important; /* Расположите навигационную панель в верхней части страницы */
                     justify-content: center;
                     background-color: white;
-                    padding: 20px 0 20px 0;
+                    padding: 30px 0 30px 0;
+                    z-index: 2;
                     a {
-                        font-size: 18px;
+                        font-size: 14px;
                     }
                 }
                 .content {
@@ -656,7 +658,8 @@
                 .owl-carousel {
                     div {
                         img {
-                            height: 200px;
+                            width: auto;
+                            height: 190px;
                         }
                     }
                 }
