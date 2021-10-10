@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+}
+
+ul{
+    width: 50%;
+    order: 2;
+    background-color: rgb(250, 250, 250);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    cursor: pointer;
+    overflow: scroll;
+}
+
+ul li {
+    width: 50%;
+    height: 40px;
+    background-color: rgb(21, 29, 31);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    display: flex;
+   
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.buttons{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(21, 29, 31);
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttons .btn:nth-child(3), .btn:nth-child(4), .btn:nth-child(5){
+    border: 0;
+    border-radius: 4px;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+   
+    color: whitesmoke;
+    transition: all 0.1s linear;
+    cursor: pointer;
+    
+}
+
+.buttons .btn:nth-child(3) {
+    margin-top: 40px;
+    color: rgb(29, 240, 135);
+    border: 3px solid rgb(29, 240, 135);
+}
+
+.buttons .btn:nth-child(4) {
+   
+    color: rgb(177, 12, 53);
+    border: 3px solid rgb(177, 12, 53);
+}
+.buttons .btn:nth-child(5) {
+    color: rgb(219, 216, 22);
+    border: 3px solid rgb(219, 216, 22);
+}
+
+.buttons .btn:nth-child(3):hover{
+    background-color: rgb(31, 95, 1);
+    color: white;
+}
+.buttons .btn:nth-child(4):hover{
+    background-color: rgb(99, 8, 31);
+    color: white;
+}
+
+.buttons .btn:nth-child(5):hover{
+    background-color: rgb(168, 166, 16);
+    color: white;
+}
+
+.buttons .btn:nth-child(1), .btn:nth-child(2){
+    width: 220px;
+    height: 30px;
+    border-radius: 4px;
+    margin-top: 10px;
+    border: 0;
+    padding-left: 16px;
+}
+
+.buttons .btn:nth-child(1):hover, .btn:nth-child(2):hover{
+    border: 2px solid rgb(46, 221, 207);
+}
+
+
